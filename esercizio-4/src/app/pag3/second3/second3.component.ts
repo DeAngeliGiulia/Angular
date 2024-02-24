@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import {MatTableModule} from '@angular/material/table';
 
-export interface PeriodicElement {
+export interface Canzoni {
   titolo: string;
   posizione: number;
   uscita: string;
   symbol: string;
 }
 
-const ELEMENT_DATA: PeriodicElement[] = [
+const ELEMENT_DATA: Canzoni[] = [
   {posizione: 1, titolo: 'Change My Clothes', uscita: "", symbol: 'H'},
   {posizione: 2, titolo: 'Water Fountain', uscita: "", symbol: 'He'},
   {posizione: 3, titolo: 'If We Have Each Other', uscita: "", symbol: 'Li'},

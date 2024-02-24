@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import {MatPaginatorModule} from '@angular/material/paginator';
-
+import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
 @Component({
   selector: 'fourth',
   standalone: true,
-  imports: [MatPaginatorModule],
+  imports: [MatButtonModule, MatMenuModule],
   templateUrl: './fourth.component.html',
   styleUrl: './fourth.component.css'
 })
