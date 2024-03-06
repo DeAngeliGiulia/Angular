@@ -1,17 +1,19 @@
 <div *ngFor="let element of persone, index as i">
     <mat-card class="example-card">
         <mat-card-header>
-            <div mat-card-avatar class="example-header-image"><img src="{{element.immagine}}"></div>
-            <mat-card-title>Nome: <strong>{{element.nome}} {{element.cognome}}</strong></mat-card-title>
-            <mat-card-subtitle>Telefono: <i>{{element.numero}}</i></mat-card-subtitle>
+            <div class="example-header-image"><img style="height: 50px;" src="{{element.immagine}}"></div>
+            <div style="float: right;">
+                <mat-card-title>Nome: <strong>{{element.nome}} {{element.cognome}}</strong></mat-card-title>
+                <mat-card-subtitle>Telefono: <i>{{element.numero}}</i></mat-card-subtitle>
+            </div>
         </mat-card-header>
         <mat-card-content>
             <mat-expansion-panel (opened)="panelOpenState = true"
                                  (closed)="panelOpenState = false">
             <mat-expansion-panel-header>
-            <mat-panel-title>Più informazioni sul contatto</mat-panel-title>
+                <mat-panel-title>Più informazioni sul contatto</mat-panel-title>
             </mat-expansion-panel-header>
-            <p>I'm visible because I am open</p>
+                <p>............</p>
             </mat-expansion-panel>
         </mat-card-content>
     </mat-card>
