@@ -17,15 +17,15 @@ export class ListaContattiComponent {
   
   persone = [
     {nome: "Tony", cognome: "Stark", immagine: "./assets/tony.jpg", numero: "3315946479", eta: "50", isOnline: false, colore: "yellow"},
-    {nome: "Jack", cognome: "Sparrow", immagine: "./assets/Jacksparrow.jpg", numero: "3473786291", eta: "47", isOnline: false, colore: "orange"},
-    {nome: "Jack", cognome: "Sparrow", immagine: "./assets/Jacksparrow.jpg", numero: "3473786291", eta: "50", isOnline: true, colore: "red"},
-    {nome: "Jack", cognome: "Sparrow", immagine: "./assets/Jacksparrow.jpg", numero: "3473786291", eta: "50", isOnline: false, colore: "deeppink"},
-    {nome: "Jack", cognome: "Sparrow", immagine: "./assets/Jacksparrow.jpg", numero: "3473786291", eta: "50", isOnline: false, colore: "blueviolet"},
-    {nome: "Jack", cognome: "Sparrow", immagine: "./assets/Jacksparrow.jpg", numero: "3473786291", eta: "50", isOnline: false, colore: "blue"},
-    {nome: "Jack", cognome: "Sparrow", immagine: "./assets/Jacksparrow.jpg", numero: "3473786291", eta: "50", isOnline: false, colore: "dodgerblue"},
+    {nome: "Jack", cognome: "Sparrow", immagine: "./assets/Jacksparrow.jpg", numero: "3473786291", eta: "47", isOnline: true, colore: "orange"},
+    {nome: "Dwayne", cognome: "Johnson", immagine: "./assets/Jacksparrow.jpg", numero: "3476482575", eta: "50", isOnline: true, colore: "red"},
+    {nome: "Peter", cognome: "Parker", immagine: "./assets/Jacksparrow.jpg", numero: "3473786291", eta: "50", isOnline: true, colore: "deeppink"},
+    {nome: "Bruce", cognome: "Wayne", immagine: "./assets/Jacksparrow.jpg", numero: "3473786291", eta: "50", isOnline: false, colore: "blueviolet"},
+    {nome: "Clark", cognome: "Kent", immagine: "./assets/Jacksparrow.jpg", numero: "3473786291", eta: "50", isOnline: false, colore: "royalblue"},
+    {nome: "Kara", cognome: "Danvers", immagine: "./assets/Jacksparrow.jpg", numero: "3473786291", eta: "50", isOnline: true, colore: "dodgerblue"},
     {nome: "Jack", cognome: "Sparrow", immagine: "./assets/Jacksparrow.jpg", numero: "3473786291", eta: "50", isOnline: false, colore: "deepskyblue"},
-    {nome: "Jack", cognome: "Sparrow", immagine: "./assets/Jacksparrow.jpg", numero: "3473786291", eta: "50", isOnline: false, colore: "aqua"},
-    {nome: "Jack", cognome: "Sparrow", immagine: "./assets/Jacksparrow.jpg", numero: "3473786291", eta: "50", isOnline: false, colore: "chartreuse"},
+    {nome: "Carol", cognome: "Danvers", immagine: "./assets/Jacksparrow.jpg", numero: "3473786291", eta: "50", isOnline: true, colore: "aqua"},
+    {nome: "Natasha", cognome: "Romanova", immagine: "./assets/Jacksparrow.jpg", numero: "3473786291", eta: "50", isOnline: false, colore: "chartreuse"},
   ]
 }
 
