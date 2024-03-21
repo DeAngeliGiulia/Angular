@@ -10,6 +10,9 @@
                     <button mat-raised-button style="border: solid rgb(0, 0, 0);" (click)="clicca(i)">Più informazioni</button>
                 </div>
             </mat-card-header>
+            <span class="badge" [ngSwitch]="giocatori[i].nazionalita">
+                <p *ngSwitchCase=""></p>
+            </span>
         </mat-card>
     </div>
   </div>
