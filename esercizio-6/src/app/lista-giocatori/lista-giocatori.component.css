@@ -1,15 +1,23 @@
 .exp{
-    background-color: rgb(202, 0, 0);
+    background-color: rgb(133, 0, 0);
 }
 .gold{
-    background-color: rgb(230, 194, 118);
+    background-color: rgb(126, 93, 21);
 }
 .mid{
-    background-color: rgb(121, 184, 255);
+    background-color: rgb(33, 79, 133);
 }
 .jungle{
-    background-color: rgb(93, 185, 0);
+    background-color: rgb(62, 105, 18);
 }
 .roam{
-    background-color: rgb(141, 63, 180);
+    background-color: rgb(80, 22, 109);
+}
+.badge{
+    background-color: rgb(85, 85, 85);
+    height: 20px;
+    width: 30px;
+    align-items: center;
+    padding-left: 2px;
+
 }

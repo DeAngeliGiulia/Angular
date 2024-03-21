@@ -1,18 +1,18 @@
-<div>
-    <div class="card"  style="width: 25%; margin-left: auto; margin-right: auto;" *ngFor="let element of giocatori, index as i" [ngClass]=" {'exp': element.ruolo == 'corsia EXP', 'gold': element.ruolo == 'corsia gold', 'mid': element.ruolo == 'corsia centrale', 'jungle': element.ruolo == 'giungla', 'roam': element.ruolo == 'roam'}">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
+    <div class="card"  style="width: 31%; margin-left: auto; margin-right: auto;" *ngFor="let element of giocatori, index as i" [ngClass]=" {'exp': element.ruolo == 'corsia EXP', 'gold': element.ruolo == 'corsia gold', 'mid': element.ruolo == 'corsia centrale', 'jungle': element.ruolo == 'giungla', 'roam': element.ruolo == 'roam'}">
         <mat-card class="example-card">
             <mat-card-header>
                 <div>
                     <img style="height: 125px;" src="{{element.foto}}"> 
                 </div>
-                <div style="float: right;">
-                    <mat-card-title>Nome: <strong>{{element.nome}}</strong> <br> Età: {{element.eta}} <br> Nazionalità: {{element.nazionalita}} <br> Ruolo: {{element.ruolo}} <br> Personaggio preferito: {{element.personaggio}}</mat-card-title>
+                <div style="float: right; font-size: large; padding-right: 15px; text-align: left;">
+                    <mat-card-title style="padding-bottom: 7px;">Nome: <strong>{{element.nome}}</strong> <br> Età: {{element.eta}} <br> Ruolo: {{element.ruolo}} <br> Personaggio preferito: {{element.personaggio}}</mat-card-title>
                     <button mat-raised-button style="border: solid rgb(0, 0, 0);" (click)="clicca(i)">Più informazioni</button>
                 </div>
+                <span class="badge" [ngSwitch]="giocatori[i].nazionalita">
+                    <p *ngSwitchCase='"id"'><i class="id flag" style="margin-left: auto; margin-right: auto;"></i></p>
+                    <p *ngSwitchCase='"ph"'><i class="ph flag" style="margin-left: auto; margin-right: auto;"></i></p>
+                </span>
             </mat-card-header>
-            <span class="badge" [ngSwitch]="giocatori[i].nazionalita">
-                <p *ngSwitchCase=""></p>
-            </span>
         </mat-card>
     </div>
-  </div>
