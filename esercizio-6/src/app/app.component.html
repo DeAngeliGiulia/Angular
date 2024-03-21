@@ -1,14 +1,4 @@
-<div style="background-color: rgb(78, 85, 92);">
-  <div class="card"  style="width: 400px;" *ngFor="let element of giocatori, index as i">
-      <mat-card class="example-card">
-          <mat-card-header>
-              <div style="float: right;">
-                  <mat-card-title>Nome: <strong>{{element.nome}}</strong> <br> Età: {{element.eta}} <br> Nazionalità: {{element.nazionalita}} <br> Ruolo: {{element.ruolo}} <br> Personaggio preferito: {{element.personaggio}}</mat-card-title>
-              </div>
-          </mat-card-header>
-          <mat-card-content>
-            <button mat-raised-button>Più informazioni</button>
-          </mat-card-content>
-      </mat-card>
-  </div>
+<div style="height: 100%; text-align: center; background: black;">
+<img src="../assets/mobile-legends-logo.jpg" style="height: 200px;">
 </div>
+<lista-giocatori></lista-giocatori>

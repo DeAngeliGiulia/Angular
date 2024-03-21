@@ -1,0 +1,15 @@
+<div>
+    <div class="card"  style="width: 25%; margin-left: auto; margin-right: auto;" *ngFor="let element of giocatori, index as i" [ngClass]=" {'exp': element.ruolo == 'corsia EXP', 'gold': element.ruolo == 'corsia gold', 'mid': element.ruolo == 'corsia centrale', 'jungle': element.ruolo == 'giungla', 'roam': element.ruolo == 'roam'}">
+        <mat-card class="example-card">
+            <mat-card-header>
+                <div>
+                    <img style="height: 125px;" src="{{element.foto}}"> 
+                </div>
+                <div style="float: right;">
+                    <mat-card-title>Nome: <strong>{{element.nome}}</strong> <br> Età: {{element.eta}} <br> Nazionalità: {{element.nazionalita}} <br> Ruolo: {{element.ruolo}} <br> Personaggio preferito: {{element.personaggio}}</mat-card-title>
+                    <button mat-raised-button style="border: solid rgb(0, 0, 0);" (click)="clicca(i)">Più informazioni</button>
+                </div>
+            </mat-card-header>
+        </mat-card>
+    </div>
+  </div>
