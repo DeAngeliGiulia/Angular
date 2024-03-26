@@ -1,0 +1,10 @@
+@font-face {
+    font-family: poke-font ;
+    src: url(../../assets/Pokemon\ Solid.ttf);
+}
+.btn{
+    margin-top: 20px;
+}
+.container{
+    align-items: end;
+}
