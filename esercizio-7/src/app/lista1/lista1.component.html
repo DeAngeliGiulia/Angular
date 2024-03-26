@@ -1,0 +1,12 @@
+<div class="card" *ngFor="let element of gen1, index as i" style='border: solid; border-color: rgb(0, 0, 0); align-items: center; height: 280px; width: 400px;  margin-left: auto; margin-right: auto;'>
+    <div class="content" >
+        <p style="font-family: sans-serif;">
+        <strong>
+          {{element.nome}}
+        </strong>
+        <br>
+        </p>
+        <img style="max-width: 100px; max-height: 100px;" class="immagine" src="{{element.immagine}}" alt="Image"> <br>
+        <button class="btn" style="background-color: black; color: white; " (click)="click(i)">{{element.nome}}</button>
+    </div>
+</div>
