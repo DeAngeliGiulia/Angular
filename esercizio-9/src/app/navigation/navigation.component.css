@@ -1,0 +1,21 @@
+.nav{
+    text-align: center;
+    font-family: 'Gill Sans';
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.titolo{
+    color: rgb(109, 175, 236);
+    font-weight: bold;
+}
+.bottone{
+    font-size: x-large;
+    font-family: 'Gill Sans';
+    background-image: url(../../assets/sfondo.jpg);
+    background-size: 100% 100%;
+    background-color: rgb(42, 112, 177);
+    height: 45px;
+    width: 90px;
+    border-radius: 5px;
+    color: rgb(109, 175, 236);
+}
