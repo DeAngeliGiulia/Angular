@@ -1,12 +1,10 @@
-<div style="background-image: url(../assets/night-sky.jpg);">
-  <navigation (paginaEvento)="paginaNavBar ($event)"></navigation>
+<navigation (paginaEvento)="paginaNavBar ($event)"></navigation>
 
-  <div *ngIf="paginaHome == 'home', then PaginaHome"></div>
-    <ng-template #PaginaHome>
-      <introduction></introduction>
-    </ng-template>
+<div *ngIf="paginaHome == 'home', then PaginaHome"></div>
+  <ng-template #PaginaHome>
+    <introduction></introduction>
+  </ng-template>
 
-  <div *ngIf="paginaHome == 'biglietti', then PaginaBiglietti"></div>
-    <ng-template #PaginaBiglietti>
-    </ng-template>
-</div>
+<div *ngIf="paginaHome == 'biglietti', then PaginaBiglietti"></div>
+  <ng-template #PaginaBiglietti>
+  </ng-template>
