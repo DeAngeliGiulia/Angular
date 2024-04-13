@@ -1,3 +1,20 @@
-<div class="card" *ngFor="let element of citta.slice(0,5); let i = index" style='border: solid; background-color: rgb(31, 31, 83); align-items: center; height: 280px; width: 400px;  margin-left: auto; margin-right: auto;'>
-
+<div class="card" *ngFor="let element of pianeti; let i = index" style='border: solid; background-color: rgb(31, 31, 83); align-items: center; width: 75%;  margin-left: auto; margin-right: auto;'>
+    <mat-card>
+        <div>
+            <div style="margin-left: 20px; margin-top: 20px; float: left;">
+                <p style="color: rgb(109, 185, 255); ">
+                    Pianeta: <strong>{{element.nome}}</strong> <br>
+                    {{element.sistema}} <br>
+                    Distanza: {{element.distanza}} <br>
+                    Massa: {{element.massa}} <br>
+                    Spazioporto di partenza: {{element.partenza}} <br>
+                    Data partenza: {{ element.dPart | date: 'longDate' }} <br>
+                    Data arrivo: {{ element.dArr | date: 'longDate' }} <br>
+                    Prezzo: {{ element.costo | currency: 'EUR':'symbol' }}
+                </p>
+            </div>
+            <div><img style="height: 200px; float: right; margin-top: 15px; margin-bottom: 15px; margin-right: 5%; border-radius: 100px" src="{{element.immagine}}"></div>
+        </div>
+        
+    </mat-card>
 </div>

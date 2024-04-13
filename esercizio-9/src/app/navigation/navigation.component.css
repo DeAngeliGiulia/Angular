@@ -4,20 +4,29 @@
     padding-top: 1px;
     padding-bottom: 20px;
     margin-bottom: 5px;
-    background-image: url(../../assets/night-sky.jpg);
+    background-color: rgb(0, 0, 0);
 }
 .titolo{
-    color: rgb(109, 175, 236);
+    color: rgb(0, 110, 255);
     font-weight: bold;
 }
 .bottone{
     font-size: x-large;
     font-family: 'Gill Sans';
-    background-image: url(../../assets/sfondo.jpg);
+    background-image: url(../../assets/bottoni.jpg);
     background-size: 100% 100%;
-    background-color: rgb(42, 112, 177);
     height: 45px;
     width: 90px;
     border-radius: 5px;
-    color: rgb(109, 175, 236);
+    color: rgb(0, 132, 255);
+}
+.bottone1{
+    font-size: x-large;
+    font-family: 'Gill Sans';
+    background-image: url(../../assets/bottoni1.jpg);
+    background-size: 100% 100%;
+    height: 45px;
+    width: 90px;
+    border-radius: 5px;
+    color: rgb(0, 132, 255);
 }

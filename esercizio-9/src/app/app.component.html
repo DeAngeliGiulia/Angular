@@ -1,5 +1,7 @@
 <navigation (paginaEvento)="paginaNavBar ($event)"></navigation>
 
+<div style="background-image: url(../assets/sfondo2.gif); background-size: cover;">
+
 <div *ngIf="paginaHome == 'home', then PaginaHome"></div>
   <ng-template #PaginaHome>
     <introduction></introduction>
@@ -9,3 +11,5 @@
   <ng-template #PaginaBiglietti>
     <list></list>
   </ng-template>
+
+</div>
