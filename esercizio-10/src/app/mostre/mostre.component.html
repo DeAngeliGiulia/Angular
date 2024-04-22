@@ -1,4 +1,4 @@
-<div class="card" *ngFor="let element of mostre.slice(0, 7); let i = index" style='border: solid; background-color: rgb(51, 80, 145); align-items: center; height: 430px; width: 450px; margin-left: auto; margin-right: auto;'>
+<div class="card" *ngFor="let element of Dati.mostre; let i = index" style='border: solid; background-color: rgb(51, 80, 145); align-items: center; height: 430px; width: 450px; margin-left: auto; margin-right: auto;'>
     <div class="content" style="text-align: center;">
         <p style="margin-left: 50px; margin-right: 50px;"><strong>Mostra su {{element.nome}} <br>
         Pittore: {{element.pittore}}</strong><br><br>
@@ -6,5 +6,5 @@
         <img style="max-width: 300px; max-height: 190px; padding-top: 10px;" class="immagine" src="{{element.immagine}}" alt="Image"> <br>
         <p>Data inizio: {{ element.dInizio | date: 'shortDate' }} <br>
             Data fine: {{ element.dFine | date: 'shortDate' }} <br></p>
-        <button class="btn" style="color: white; background-color: rgb(0, 16, 107);">Scopri di più</button>
+        <button class="btn" id="'i" (click)="dettagli(i)" style="color: white; background-color: rgb(0, 16, 107);">Scopri di più</button>
     </div>
